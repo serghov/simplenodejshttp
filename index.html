@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test HTML webpage</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body style="font-family: sans-serif;">
+
+Here is a neat example of an html page that was transfered to your browser
+via HTTP protocol from a server.
+<br><br><br>
+<div>
+    <div> Click the button bellow to request data from the server using POST http request</div>
+    <input type="button" value="Make a request" id = "postReq" />
+</div>
+
+<br><br><br>
+<div>
+    <div> Click the button bellow to request data from the server using GET http request</div>
+    <input type="button" value="Make a request" id = "getReq" />
+</div>
+
+<br><br><br>
+<div>
+    <div> Click the button bellow to request data from the server using GET http request
+        <br>
+        but this time you can provide the url that we will use to send the request.
+        <br>
+        (you can try, 'index.html', 'index.js' or 'data')
+    </div>
+    <br>
+
+    <input type="text" value="" placeholder="url" id="url"/>
+    <br>
+    <input type="button" value="Make a request" id = "urlReq" />
+</div>
+
+<br><br><br>
+
+<div>
+    Output console, this is where you will see what the server and the client
+    <br>
+    are talking about to each other
+</div>
+<br>
+<div id = "console" style="background-color: #111; color: #fff;padding: 15px;border: 1px solid #555; border-radius: 2px; width: 400px; min-height: 500px;">
+
+</div>
+
+</body>
+
+</html>
